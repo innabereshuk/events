@@ -85,7 +85,7 @@ nav {
     font-size: 1.6rem;
 }
 
-section {
+.section {
     padding: 100px 0;
 }
 
@@ -110,6 +110,14 @@ section {
 .section--gradient {
     background-image: linear-gradient(to top, #ff00cc 0%, #333999 65%);
     color: #fff;
+}
+
+.section--pink {
+    background-color: #f9e8ea;
+}
+
+.section--grey {
+    background-color: #eee;
 }
 
 .section__title {
@@ -207,6 +215,131 @@ h2 +.section__subtitle {
     background-color: #ffffff;
     color: #444444;
 }
+
+.persons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.person {
+    margin: 15px 45px;
+    width: calc(100% / 3 - 90px);
+}
+
+.person--lg {
+    margin: 15px 25px;
+    width: calc(100% /3 - 50px);
+}
+
+.person__img {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.person__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.person__img-round {
+    border-radius: 50%;
+}
+
+
+.person__name {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin: 10px 0;
+}
+
+.person__pos {
+    font-size: 1.4rem;
+}
+
+
+.countdown__item {
+   display: inline-block;
+   background-color: #480340;
+   border: 1px solid #480340;
+   text-align: center;
+   padding: 30px;
+   width: 174px;
+   margin: 0 30px;
+}
+
+.countdown__num {
+    line-height: 1;
+    font-size: 7.2rem;
+    font-weight: 700;
+}
+
+.countdown__text {
+   font-size: 1.8rem;
+   line-height: 1;
+   text-transform: uppercase;
+
+}
+
+.countdown__item--transparent {
+   background-color: transparent;
+   border-color: #fff;
+}
+
+.sponsors {
+    list-style: none;
+    padding: 0;
+}
+
+.sponsor {
+    display: inline-block;
+}
+
+.sponsor__logo {
+    transform: scale(.8);
+    transition: all .25s ease-in;
+}
+
+.sponsor__logo:hover,
+.sponsor__logo:focus,
+.sponsor__logo:active {
+    transform: scale(1);
+}
+
+.socials {
+    padding: 0;
+    list-style: none;
+}
+
+.social{
+    display: inline-block;
+}
+
+.social__link {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #dedede;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 65px;
+}
+
+.social__link:hover,
+.social__link:focus,
+.social__link:active {
+    background-color: #fff;
+    color: #dedede;
+}
+
 
 /* Helpers */
 .text-center {
