@@ -197,6 +197,26 @@ h2 +.section__subtitle {
     display: inline-block;
 }
 
+.btn--sm {
+    padding: 20px;
+}
+
+.btn--black {
+    background-color: #555555;
+    border-color: #555;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-size: 1.2rem;
+}
+
+.btn--black:hover,
+.btn--black:focus,
+.btn--black:active {
+    background-color: #fff;
+    color: #555555;
+}
+
+
 .btn:hover,
 .btn:focus,
 .btn:active {
@@ -340,10 +360,105 @@ h2 +.section__subtitle {
     color: #dedede;
 }
 
+.newsletter {}
+    
+
+.newsletter__input {
+    border: 2px solid #fff;
+    padding: 20px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    border-radius: 10px;
+    color: #888888;
+    width: 400px;
+    transition: all .25s ease-in;
+}
+
+.newsletter__input:hover {
+    outline: none;
+    border-color: #e71cb4;
+
+}
+
+.contacts {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+
+.contacts__input {
+    border: none;
+    border-bottom: 2px solid #000;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    transition: all .25s ease-in;
+}
+
+
+.contacts__label {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translate(0, -100%);
+    transition: all .25s ease-in;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.col {
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 30px;
+    position: relative;
+    border-bottom: 2px solid #000;
+}
+
+.col + .col {
+    margin-left: 30px;
+}
+.contacts__input.filled + .contacts__label,
+.contacts__input:focus + .contacts__label {
+    transform: translate(0, 0);
+}
+
+textarea {
+
+}
+
+.contacts__input:focus {
+    outline: none;
+    border-color: transparent;
+}
+
+.validated {
+    /*border-color: #f40808;*/
+}
+
+.validated .contacts__input:invalid {
+    border-color: #f40808;
+}
+
+
+.validated .contacts__input:invalid + .contacts__label {
+    color: #f40808;
+
+}
+
+
 
 /* Helpers */
 .text-center {
     text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .text-purple {
