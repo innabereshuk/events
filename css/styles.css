@@ -359,9 +359,7 @@ h2 +.section__subtitle {
     background-color: #fff;
     color: #dedede;
 }
-
-.newsletter {}
-    
+ 
 
 .newsletter__input {
     border: 2px solid #fff;
@@ -422,13 +420,10 @@ h2 +.section__subtitle {
 .col + .col {
     margin-left: 30px;
 }
+
 .contacts__input.filled + .contacts__label,
 .contacts__input:focus + .contacts__label {
     transform: translate(0, 0);
-}
-
-textarea {
-
 }
 
 .contacts__input:focus {
