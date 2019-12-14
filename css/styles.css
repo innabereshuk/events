@@ -359,10 +359,7 @@ h2 +.section__subtitle {
     background-color: #fff;
     color: #dedede;
 }
-
-.newsletter {}
-    
-
+   
 .newsletter__input {
     border: 2px solid #fff;
     padding: 20px;
@@ -427,17 +424,9 @@ h2 +.section__subtitle {
     transform: translate(0, 0);
 }
 
-textarea {
-
-}
-
 .contacts__input:focus {
     outline: none;
     border-color: transparent;
-}
-
-.validated {
-    /*border-color: #f40808;*/
 }
 
 .validated .contacts__input:invalid {
