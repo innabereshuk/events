@@ -363,8 +363,7 @@ h2 +.section__subtitle {
     background-color: #fff;
     color: #dedede;
 }
- 
-
+   
 .newsletter__input {
     border: 2px solid #fff;
     padding: 20px;
@@ -435,10 +434,13 @@ h2 +.section__subtitle {
     border-color: transparent;
 }
 
+<<<<<<< HEAD
 /* .validated {
     /*border-color: #f40808;*/
 /* } */ 
 
+=======
+>>>>>>> 8c6cbadd31e1a3e258e1394931be54882ed2ee2b
 .validated .contacts__input:invalid {
     border-color: #f40808;
 }
